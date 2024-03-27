@@ -5,7 +5,7 @@ import '../HomePage/styles/HomePage.css'
 
 const OtherHotels = ({ cityId, hotelId }) => {
 
-  const url = `https://hotels-api.academlo.tech/hotels?cityId=${cityId}`
+  const url = `https://booking-app-backend-d9da.onrender/hotels?cityId=${cityId}`
   const [hotels, getHotels] = useFetch(url)
 
   useEffect(() => {
