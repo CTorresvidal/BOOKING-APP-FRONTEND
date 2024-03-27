@@ -9,11 +9,11 @@ const navigate = useNavigate()
 const handleNavigate = () => {
   navigate(`/hotel/${hotel.id}`)
 }
-
+const imageUrl = hotel.images && hotel.images.length > 0 ? hotel.images[0].url : '';
   return (
     <article>
       <header>
-        <img className="HotelCard__Image" src={hotel.images[0].url} alt="" />
+        <img className="HotelCard__Image" src={imageUrl} alt="" />
       </header>
       <section className="HotelCard__Section">
         <h3 className="HotelCard__title">{hotel.name}</h3>
