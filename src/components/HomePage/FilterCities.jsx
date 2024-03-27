@@ -6,7 +6,7 @@ import './styles/HomePage.css'
 
 const FilterCities = () => {
 
-  const url = 'http://localhost:8080/cities'
+  const url = 'https://booking-app-backend-d9da.onrender.com/cities'
   const [ cities, getCities ] = useFetch(url)
 
   useEffect(() => {
@@ -16,9 +16,9 @@ const FilterCities = () => {
   const dispatch = useDispatch()
 
   const handleFilterCities = (id) => {
-    let url = 'http://localhost:8080/hotels';
+    let url = 'https://booking-app-backend-d9da.onrender.com/hotels';
     if (id !== 'all cities') {
-    url = `http://localhost:8080/hotels?cityId=${id}`;
+    url = `https://booking-app-backend-d9da.onrender.com/hotels?cityId=${id}`;
     }
     dispatch(getHotelsThunk(url));
   };
