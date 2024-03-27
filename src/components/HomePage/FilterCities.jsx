@@ -16,9 +16,9 @@ const FilterCities = () => {
   const dispatch = useDispatch()
 
   const handleFilterCities = (id) => {
-    let url = 'https://booking-app-backend-d9da.onrender/hotels';
+    let url = 'https://booking-app-backend-d9da.onrender.com/hotels';
     if (id !== 'all cities') {
-    url = `https://booking-app-backend-d9da.onrender/hotels?cityId=${id}`;
+    url = `https://booking-app-backend-d9da.onrender.com/hotels?cityId=${id}`;
     }
     dispatch(getHotelsThunk(url));
   };

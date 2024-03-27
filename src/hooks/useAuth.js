@@ -13,14 +13,14 @@ const useAuth = () => {
   }, []);
 
   const createNewUser = (data) => {
-    const url = 'https://booking-app-backend-d9da.onrender/users';
+    const url = 'https://booking-app-backend-d9da.onrender.com/users';
     axios.post(url, data)
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   };
 
   const loginUser = (data) => {
-    const url = 'https://booking-app-backend-d9da.onrender/users/login';
+    const url = 'https://booking-app-backend-d9da.onrender.com/users/login';
     axios.post(url, data)
       .then((res) => {
         localStorage.setItem('token', res.data.token);
