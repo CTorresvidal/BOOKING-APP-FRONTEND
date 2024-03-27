@@ -12,7 +12,7 @@ const HotelInfoPage = () => {
 
   const { id } = useParams()
 
-  const url = `https://booking-app-backend-d9da.onrender/hotels/${id}`
+  const url = `https://booking-app-backend-d9da.onrender.com/hotels/${id}`
   const [hotel, getHotel] = useFetch(url)
 
   useEffect(() => {

@@ -20,7 +20,7 @@ const HomePage = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    const url = 'https://booking-app-backend-d9da.onrender/hotels'
+    const url = 'https://booking-app-backend-d9da.onrender.com/hotels'
     dispatch(getHotelsThunk(url))
   }, [])
 
@@ -35,7 +35,7 @@ const HomePage = () => {
     return filterName && filterPrice
   }) 
 
- 
+
 
 
   return (
@@ -49,7 +49,7 @@ const HomePage = () => {
 
       <div className="Home__Container">
         <aside className="Home__Container_Filters">
-         
+        
           <FilterPrice setFromTo={setFromTo} />
           <FilterCities />
         </aside>

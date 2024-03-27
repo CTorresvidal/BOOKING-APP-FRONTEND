@@ -6,7 +6,7 @@ import './styles/HomePage.css'
 
 const FilterCities = () => {
 
-  const url = 'https://booking-app-backend-d9da.onrender/cities'
+  const url = 'https://booking-app-backend-d9da.onrender.com/cities'
   const [ cities, getCities ] = useFetch(url)
 
   useEffect(() => {

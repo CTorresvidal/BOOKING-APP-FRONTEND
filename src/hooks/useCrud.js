@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 const useCrud = () => {
- 
+
   const [response, setResponse] = useState()
 
   const baseUrl = 'https://booking-app-backend-d9da.onrender.com'
@@ -20,7 +20,7 @@ const useCrud = () => {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
       }
-     })
+    })
   }
 
 //POST
@@ -34,7 +34,7 @@ const useCrud = () => {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
       }
-     })
+    })
 
   } 
 
@@ -52,7 +52,7 @@ const useCrud = () => {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
       }
-     })
+    })
   }
 //UPDATE
   const updateApi = (path, id, data) => {
@@ -65,7 +65,7 @@ const useCrud = () => {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
       }
-     })
+    })
   }
 
   return [ response, getApi, postApi, deleteApi, updateApi ]
